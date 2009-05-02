@@ -1,0 +1,107 @@
+body {
+	font-family: "Trebuchet MS", Verdana, Arial;
+	background-color: #FFFAE4;
+}
+[disabled] {
+	color: #000;
+}
+hidden {
+	display: none;
+}
+
+
+
+#progress-container {
+	position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: -1;
+	width: 100%; height: 100%;
+}
+#progress {
+	width: 0%; height: 100%; background-color: #40627C;
+}
+
+
+#help-trigger {
+	position: absolute; top: 2em; right: 2em; height: 1em;
+	font-weight: bold; font-size: 1em; cursor: pointer;
+}
+#help-trigger:hover {
+	color: #f00;
+}
+
+
+
+#timer-container {
+	position: absolute; top: 5em; right: 2em; bottom: 11em; left: 2em;
+	vertical-align: middle;
+}
+#timer {
+	width: 100%; border: 0; border: 2px solid #999;
+	font-size: 10em; text-align: center; font-family: Consolas, "Courier New"; letter-spacing: .0em;
+	font-weight: bold;
+}
+#timer.focused {background-color: #E8E595; border: 2px solid #000;}
+#timer.running {background-color: #D0A825; border: 2px solid #000;}
+
+
+
+#trigger-container {
+	position: absolute; right: 2em; bottom: 5em; left: 2em; height: 4em;
+}
+#trigger {
+	width: 100%; height: 100%;
+	font-size: 3em;
+}
+
+
+
+#quick-container {
+	position: absolute; right: 2em; bottom: 2em; left: 2em;
+	text-align: center;
+}
+#quick-container li {
+	display: inline; margin: 0 1em; font-size: 1.5em;
+	text-decoration: underline; cursor: pointer;
+}
+#quick-container li:hover {
+	color: #f33;
+}
+
+
+
+#help-container {
+	position: absolute; top: 50%; left: 50%; z-index: 10;
+	margin: -12em; padding: 2em; width: 20em; height: 20em; background-color: #fff;
+	border: 2px solid #000;
+}
+#help-container div.header {
+	position: relative; top: -1em;
+}
+#help-container div.close {
+	display: inline; width: 50%; float: left; text-align: right;
+	cursor: pointer;
+}
+#help-container div.close:hover {
+	color: #f00;
+}
+#help-container div.header h2 {
+	display: inline; width: 50%; float: left;
+}
+#help-container h4 {
+	margin: 1em 0 .5em; padding: 0 1em;
+	border-bottom: 1px solid #999;
+}
+#help-container table {
+	border: 1px solid #000; margin: 0 1em;
+}
+#help-container table th, #help-container table td {
+	padding: .2em .5em;
+}
+#help-container table tr:hover {
+	background-color: #ccc;
+}
+#help-container table td {
+	font-family: Consolas, "Courier New";
+}
+#help-container p {
+	text-indent: 1em;
+}

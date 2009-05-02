@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Timer</title>	
+	<link type="text/css" href="css/reset.css" rel="stylesheet" media="screen" />
+	<link type="text/css" href="css/timer.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+
+<div id="progress-container">
+	<div id="progress">&nbsp;</div>
+</div>
+
+<div id="help-trigger">Need help?</div>
+
+<div id="timer-container">
+	<input type="text" id="timer" value="5 min" tabindex="1" />
+</div>
+
+<div id="trigger-container">
+	<input type="button" id="trigger" value="Start" tabindex="2" />
+</div>
+
+<div id="quick-container">
+	<ul>
+		<li title="30">30 sec</li>
+		<li title="60">1 min</li>
+		<li title="300">5 min</li>
+		<li title="900">15 min</li>
+		<li title="1800">30 min</li>
+		<li title="2700">45 min</li>
+		<li title="3600">1 hour</li>
+	</ul>
+</div>
+
+<div id="help-container" class="hidden">
+	<div class="header">
+		<h2>Help tips</h2>
+		<div class="close" title="Close help window">Close [x]</div>
+	</div>
+	
+	<h4>Syntax</h4>
+	<table border="0" cellspacing="0">
+	<thead>
+	<tr>
+		<th>You type</th>
+		<th>&nbsp;</th>
+		<th>Timer thinks</th>
+	</tr>
+	</thead>
+	<tbody align="center">
+	<tr>
+		<td align="right">1:5</td>
+		<td>&rarr;</td>
+		<td>01:05:00</td>
+	</tr>
+	<tr>
+		<td align="right">02:15:30</td>
+		<td>&rarr;</td>
+		<td>02:15:30</td>
+	</tr>
+	<tr>
+		<td align="right">1h</td>
+		<td>&rarr;</td>
+		<td>01:00:00</td>
+	</tr>
+	<tr>
+		<td align="right">15m</td>
+		<td>&rarr;</td>
+		<td>00:15:00</td>
+	</tr>
+	<tr>
+		<td align="right">45s</td>
+		<td>&rarr;</td>
+		<td>00:00:45</td>
+	</tr>
+	<tr>
+		<td align="right">1h 10m 5s</td>
+		<td>&rarr;</td>
+		<td>01:10:05</td>
+	</tr>
+	</tbody>
+	</table>
+	
+	<h4>Running</h4>
+	<p>To <i>Start/Stop</i> timer use button. Also, when focus is on the input field you can <i>Start</i> it by hitting <i>Return key</i>.</p>
+</div>
+
+<script type="text/javascript" src="http://static.igot.selfip.com/js/prototype-min.js"></script>
+<script type="text/javascript" src="js/timer.js"></script>
+
+</body>
+</html>
