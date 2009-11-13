@@ -1,6 +1,8 @@
 /*!
+ * 
  * Copyright 2009 Alexey Bass (alexey.bass@gmail.com)
- * License: MIT License (http://www.opensource.org/licenses/mit-license.html) 
+ * License: MIT License (http://www.opensource.org/licenses/mit-license.html)
+ *  
  */
 var Timer = 
 {
